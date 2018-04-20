@@ -14,7 +14,7 @@ export default class App extends Component<Props> {
   render() {
     const { viewStyles, textStyles } = styles;
     return (
-      <View>
+      <View style={{ flex: 1 }}>
         <View style={viewStyles}>
          <Header style={textStyles} title={'ReactNativeAlbums'} />
         </View>
@@ -26,7 +26,7 @@ export default class App extends Component<Props> {
 
 const styles = StyleSheet.create({
   viewStyles: {
-    backgroundColor: 'yellow',
+    backgroundColor: 'grey',
     height: 100,
     justifyContent: 'center',
     alignItems: 'center',
@@ -38,7 +38,8 @@ const styles = StyleSheet.create({
   },
   textStyles: {
     fontSize: 20,
-    fontWeight: 'bold',
-    color: 'black'
+    fontWeight: '600',
+    color: 'white',
+    textShadowColor: 'black'
   }
 });
